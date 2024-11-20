@@ -1,10 +1,18 @@
 import './App.css';
+import 'font-awesome/css/font-awesome.min.css';
+import Header from './Components/Header.js';
+import Main from './Components/Main.js';
+import Footer from './Components/Footer.js';
+
+
 
 function App() {
   return (
-    <div className="App">
-      Homepage
-    </div>
+    <>
+     <Header/>
+     <Main/>
+     <Footer/>
+     </>
   );
 }
 
