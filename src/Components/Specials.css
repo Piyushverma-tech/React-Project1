@@ -1,0 +1,52 @@
+.specials {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+    font-family: 'Karla';
+  }
+
+  .specials-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 30px 50px;
+  }
+
+  .specials-header h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    /* margin-left: 25px; */
+
+  }
+
+  .menu-button {
+    background-color: #f4ce14;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer
+  }
+
+ .menu-button:hover {
+    background-color:#e3b808;
+
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center; 
+    gap: 10rem; /* Space between the cards */
+    flex-wrap: wrap; /* Ensure cards wrap to the next row on smaller screens */
+  }
+
+  @media screen and (max-width: 480px) {
+    .specials-header{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+  }

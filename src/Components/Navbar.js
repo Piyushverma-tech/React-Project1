@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import { Link } from "react-router-dom";
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -11,16 +12,16 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <a href="/">Logo</a>
+        <Link to="/">Logo</Link>
       </div>
 
       <ul className={`navbar-links ${isMobile ? "active" : ""}`}>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#menu">Menu</a></li>
-        <li><a href="#reservation">Reservation</a></li>
-        <li><a href="#order-online">Order Online</a></li>
-        <li><a href="#login">Login</a></li>
+        <li><Link to="/">Home</Link></li>
+        <li><Link to="/">About</Link></li>
+        <li><Link to="/">Menu</Link></li>
+        <li><Link to="/reservation">Reservation</Link></li>
+        <li><Link to="/">Order Online</Link></li>
+        <li><Link to="/">Login</Link></li>
       </ul>
 
       {/* Hamburger Icon */}

@@ -1,0 +1,124 @@
+/* Hero Section Container */
+.hero-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #495e57; /* Greenish background */
+    padding: 40px 80px;
+    color: #fff;
+    font-family: 'karla';
+    padding: 40px 80px;
+    z-index: 0;
+  }
+
+  /* Text Content */
+  .hero-content {
+    max-width: 50%;
+  }
+
+  .hero-title {
+    font-size: 2.5rem;
+    color: #f4ce14;
+    margin-bottom: 0px;
+  }
+
+  .hero-subtitle {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #e8e8e8;
+  }
+  
+  .hero-button {
+    background-color: #f4ce14;
+    color: #333;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .hero-button:hover {
+    background-color: #e3b808;
+  }
+  
+  /* Image Section */
+  .hero-image{
+    height: 250px;
+    width: 280px;
+  }
+  .hero-image img {
+    max-width: 100%;
+    max-height: auto;
+    object-fit:fill;
+    border-radius: 10px;
+  }
+  
+  /* Responsive Design for Tablets and Mobile Devices */
+  @media screen and (max-width: 768px) {
+    .hero-section {
+      flex-direction: column;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    .hero-content {
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .hero-title {
+      font-size: 2rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1.2rem;
+    }
+  
+    .hero-description {
+      font-size: 0.9rem;
+    }
+  
+    .hero-button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    .hero-image img {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .hero-title {
+      font-size: 1.8rem;
+    }
+  
+    .hero-subtitle {
+      font-size: 1rem;
+    }
+  
+    .hero-description {
+      font-size: 0.8rem;
+    }
+  
+    .hero-button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+    }
+  
+    .hero-image img {
+      max-width: 100%;
+    }
+  }
