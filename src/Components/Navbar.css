@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     background-color: #ffffff;
-    padding: 18px 80px;
+    padding: 14px 80px;
     color: rgb(15, 15, 15);
     position: relative;
   }
@@ -52,7 +52,7 @@
       display: none; /* Hide links on mobile by default */
       width: 100%;
       flex-direction: column;
-      background-color: #d2d2d2;
+      background-color: #ffffff;
       position: absolute;
       top: 70px; /* Adjust to place below navbar */
       left: 0;

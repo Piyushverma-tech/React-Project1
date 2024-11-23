@@ -1,66 +1,74 @@
 .footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: #495e57;
-    color: white;
-    padding: 40px 20px;
-    margin-top: 40px;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  background-color: #495e57;
+  color: white;
+  padding: 40px 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+/* Footer links section */
+.footer-links {
+  display: flex;
+  width: 100%; 
+  max-width: 1200px; 
+  justify-content: space-evenly; 
+  text-align: center;
+  gap: 20px; 
+}
+
+/* Individual footer sections */
+.footer-section {
+  flex: 1; 
+}
+
+.footer-section h4 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+  color: #f4ce14;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #ffcc00; /* Highlight color */
+}
+
+/* Copyright section */
+.footer-copyright {
+  margin-top: 30px;
+  text-align: center;
+  width: 100%;
+  font-size: 0.9rem;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
   }
-  
-  /* Logo styling */
-  .footer-logo-img {
-    width: 120px; /* Adjust as necessary */
-    height: auto;
-  }
-  
-  /* Footer links section */
+
   .footer-links {
-    display: flex;
-    gap: 40px;
-    justify-content: space-between;
+    flex-direction: column;
+    gap: 20px;
   }
-  
-  .footer-section h4 {
-    margin-bottom: 10px;
-    font-size: 1.2rem;
+
+  .footer-section {
+    flex: none; /* Removes flex-grow on small screens */
+    width: 100%; /* Ensures full width */
   }
-  
-  .footer-section ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .footer-section ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s;
-  }
-  
-  .footer-section ul li a:hover {
-    color: #ffcc00; /* Highlight color */
-  }
-  
-  /* Copyright section */
-  .footer-copyright {
-    margin-top: 20px;
-    text-align: center;
-    width: 100%;
-    font-size: 0.9rem;
-  }
-  
-  /* Media queries for responsiveness */
-  @media (max-width: 768px) {
-    .footer {
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-    }
-  
-    .footer-links {
-      flex-direction: column;
-      gap: 20px;
-    }
-  }
+}

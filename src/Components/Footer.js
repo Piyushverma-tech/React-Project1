@@ -1,26 +1,29 @@
 import React from 'react'
 import './Footer.css'
+// import logo from '../assets/Logo.png'
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
     <footer className="footer">
       {/* Left Side: Logo */}
+
       {/* <div className="footer-logo">
-        <a href="/">
-          <img src={Logo} alt="Little Lemon Logo" className="footer-logo-img" />
-        </a>
-      </div> */}
+        <Link
+       to="/"><img src={logo} alt="Little Lemon Logo" className="footer-logo-img" />
+      </Link>
+         </div> */}
 
       {/* Right Side: Footer Links */}
       <div className="footer-links">
         <div className="footer-section">
           <h4>Navigation</h4>
           <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#menu">Menu</a></li>
-            <li><a href="#reservation">Reservation</a></li>
-            <li><a href="#order-online">Order Online</a></li>
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/">About</Link></li>
+            <li><Link to="/">Menu</Link></li>
+            <li><Link to="/reservation">Reservation</Link></li>
+            <li><Link to="/">Order Online</Link></li>
           </ul>
         </div>
 
@@ -44,7 +47,7 @@ function Footer() {
 
       {/* Copyright */}
       <div className="footer-copyright">
-        <p>&copy; 2024 Little Lemon. All rights reserved.</p>
+        <p>&copy; 2024 Piyush Verma. All rights reserved.</p>
       </div>
     </footer>
   )

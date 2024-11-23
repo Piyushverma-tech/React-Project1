@@ -14,15 +14,14 @@
   }
 
   .specials-header h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: bold;
     margin-bottom: 20px;
-    /* margin-left: 25px; */
-
   }
 
   .menu-button {
     background-color: #f4ce14;
+    color: #333;
     border: none;
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
@@ -39,8 +38,14 @@
   .cards {
     display: flex;
     justify-content: center; 
-    gap: 10rem; /* Space between the cards */
-    flex-wrap: wrap; /* Ensure cards wrap to the next row on smaller screens */
+    gap: 10rem; 
+    flex-wrap: wrap; 
+    transition: transform 0.3s ease;
+  
+  }
+
+  .card:hover {
+    transform: scale(1.02); 
   }
 
   @media screen and (max-width: 480px) {
@@ -48,5 +53,9 @@
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
+      margin-top: 20px;
+    }
+    .specials-header h1 {
+      font-size: 1.6rem;
     }
   }

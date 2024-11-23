@@ -41,7 +41,7 @@
     color: #333;
     padding: 10px 20px;
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
@@ -102,20 +102,22 @@
   
   @media screen and (max-width: 480px) {
     .hero-title {
-      font-size: 1.8rem;
+      font-size: 2rem;
     }
   
     .hero-subtitle {
-      font-size: 1rem;
+      font-size: 1.5rem;
     }
   
     .hero-description {
-      font-size: 0.8rem;
+      font-size: 0.9rem;
     }
   
     .hero-button {
-      font-size: 0.8rem;
-      padding: 6px 12px;
+      font-size: 1rem;
+      padding: 9px 12px;
+      margin-bottom: 10px; 
+      margin-top: 10px;
     }
   
     .hero-image img {

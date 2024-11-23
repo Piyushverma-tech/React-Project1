@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './Navbar.css';
 import { Link } from "react-router-dom";
+import logo from '../assets/Logo.png'
 
 function Navbar() {
   const [isMobile, setIsMobile] = useState(false);
@@ -12,7 +13,7 @@ function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-logo">
-        <Link to="/">Logo</Link>
+        <Link to="/"><img src={logo} alt="Little Lemon Logo" /></Link>
       </div>
 
       <ul className={`navbar-links ${isMobile ? "active" : ""}`}>

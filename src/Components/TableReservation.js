@@ -3,7 +3,6 @@ import { getAvailableTimes } from "../api";
 import BookingConfirmation from "./BookingConfirmation";
 import "./TableReservation.css";
 
-
 const BookingSlot = ({ time, isBooked, isSelected, onSelect }) => {
   return (
     <button
@@ -16,7 +15,6 @@ const BookingSlot = ({ time, isBooked, isSelected, onSelect }) => {
     </button>
   );
 };
-
 
 const TableReservation = () => {
   const [formData, setFormData] = useState({
@@ -31,6 +29,12 @@ const TableReservation = () => {
   const [availableSlots, setAvailableSlots] = useState([]);
   const [bookedSlots, setBookedSlots] = useState([]);
   const [showConfirmation, setShowConfirmation] = useState(false);
+
+  
+  const getTodayDate = () => {
+    const today = new Date();
+    return today.toISOString().split("T")[0];
+  };
 
   const handleChange = (e) => {
     const { id, value } = e.target;
@@ -49,6 +53,10 @@ const TableReservation = () => {
 
   const handleDateChange = (e) => {
     const date = e.target.value;
+    if (new Date(date) < new Date(getTodayDate())) {
+      alert("Please select today or a future date for your reservation.");
+      return;
+    }
     setFormData({
       ...formData,
       date,
@@ -113,6 +121,7 @@ const TableReservation = () => {
                 id="date"
                 value={formData.date}
                 onChange={handleDateChange}
+                min={getTodayDate()} 
                 required
               />
               <div className="available-slots">

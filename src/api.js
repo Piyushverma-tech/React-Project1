@@ -1,6 +1,6 @@
 export const getAvailableTimes = (date) => {
     const bookedSlots = {
-      "2024-11-22": ["2:00 PM", "5:00 PM"], // Example of already booked slots
+      "2024-11-22": ["2:00 PM", "5:00 PM"], 
     };
   
     const allSlots = [
